@@ -4,7 +4,12 @@ body{
   margin:auto;
   
     }
+  
 header p {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:blue;
   color:white;
   font-weight: bold;
   font-size: 30px;
@@ -17,7 +22,10 @@ main{
 }
 main li{
   color:white;
-  font-weight: normal; 
+  background-color:blue;
+  font-weight: normal;
+  justify-content: flex-start;
+    align-items: flex-start; 
     
 }
 h1{
@@ -55,8 +63,16 @@ aside figure img {
 
     
   }
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    background-color:blue;
+  }
 footer small{
   color:white;
   font-weight: small; 
-  background-color:blue;
+  margin:auto;
+
   }
