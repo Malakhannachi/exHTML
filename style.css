@@ -1,78 +1,166 @@
-body{
-  background-color: yellow;
-  width:1000px;
-  margin:auto;
-  
-    }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: top;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#wrapper{
+  background-color: #fdd116;
+  padding :0 15%; 
+  /* 0 en haut et en bas; 15% sur les cotés */
+}
+
+/* ===================================================
+========================HEADER========================
+ =====================================================*/
   
 header p {
   display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:blue;
+  justify-content: center;
+  align-items: center;
+  background-color:#4c8dcd;
   color:white;
   font-weight: bold;
   font-size: 30px;
-  display: flex;
    
 }
+
+header img{
+  width: 100%;
+}
+
+/* ===================================================
+========================MAIN========================
+ =====================================================*/
+
 main{
   display: flex;
   background-color: white;
+ 
 }
+
+main ul{
+  background-color:#488ed1; 
+  margin: 50px 10px 5px 10px;
+  padding : 15px 15px 15px 15px;
+  list-style: none;
+  text-align: center;
+  min-width: 120%; /* pour créer un espace */
+
+}
+
 main li{
-  color:white;
-  background-color:blue;
   font-weight: normal;
-  justify-content: flex-start;
-    align-items: flex-start; 
-    
+  margin: 3px 3px;
+  padding: 3px;
+  text-align: center;
+  white-space: nowrap;
+  
 }
+
+main a{
+color:white;
+}
+
 h1{
-  color:orange;
-  font-weight: bold; 
-}
+  color:#fdd116;
+  font-style:normal;
+  font-weight: 800; 
+  margin-left: 15%;
+  padding-top: 70px;
+  font-size:200%;
+ }
+
 article p{
   color:black;
-  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif;
   line-height:normal;
-  }
+  font-size: small;
+  margin-left: 15%;
+  padding-top: 20px;
+  text-align: justify;
+}
+
+aside {
+  padding-top : 10px;
+  background-color: #488ed1;
+  box-sizing: border-box;
+  margin : 6% 2%;
+}
+
 aside h2{
   margin:auto;
+  padding: 7px;
   color:white;
   font-size: 20px;
-  background-color: blue;
 }
+
 aside p{
-  margin:auto;
+  margin-left:5%;
+  margin-right:5%;
+  margin-bottom :5%;
+  padding: 6px 3px;
   color:white;
-  font-size: 12px;
-  background-color: blue;
+  font-size: small;  
+  text-align: center;
+  text-align: justify;
 }
+
 aside figure {
   width: 150px;
   margin:auto;
-  background-color: blue;
-  
-  }
+}
+
 aside figure img {
   width: 100%;
   height:100%;
-  display: flex;
-  background-color: blue;
+  display: flex;  
+  border: solid;
+  border-color: white;
+}
 
-    
-  }
-  footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    background-color:blue;
-  }
+/* ===================================================
+========================FOOTER========================
+ =====================================================*/
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background-color:#29539d;
+}
+
 footer small{
   color:white;
   font-weight: small; 
   margin:auto;
 
+}
+
+
+@media screen and (max-width: 640px) {
+  #wrapper{
+    padding :0 ; 
   }
+
+  main{
+    flex-direction: column;
+  }
+  main ul{
+    margin: 20px 0;
+    padding : 0 15px;
+    min-width: 50%;
+  }
+  h1{ 
+    margin: 0 15px;
+    padding-top: 15px;
+   }
+  article p{
+    margin: 0 15px;
+    padding-top: 15px;
+    text-align: justify;
+  }
+}
