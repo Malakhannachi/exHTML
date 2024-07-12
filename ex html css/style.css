@@ -12,13 +12,41 @@ header h1{
     text-align: center;
     
 }
-#profile {
+#container {
+    border: 1px solid black;
+    height: 200px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .photo{
+    width: 20px;
     height: 5px;
+}
+.items::first-letter{
+    font-size: 30px;
+}
+#contacter {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.footer {
+    background-color: rgb(43, 42, 42);
+    color : white;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
