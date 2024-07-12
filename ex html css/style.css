@@ -4,49 +4,104 @@
     box-sizing: border-box;
 }
 body{
+    background-color: #f4f4f4;
+    height: 100%;
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+   
 
 }
 
-header h1{
+
+header, .footer {
     text-align: center;
+    background-color: #333;
+    color : white;
+    padding: 20px;
     
 }
-#container {
-    border: 1px solid black;
-    height: 200px;
+
+.main {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+   
+    padding: 20px;
+    gap: 10px;
 }
-.photo{
-    width: 20px;
-    height: 5px;
+.section {
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;  /*prendre l'espace disponible;*/
+    padding: 20px;
+    border-radius: 5px;
+
+    
+}
+h2{
+    margin-bottom: 20px;
+}
+.photo {
+    display: flex;
+    justify-content: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    list-style-type: none;
+    margin-bottom: 20px;
+    
+}
+.items {
+    margin-bottom: 10px;
 }
 .items::first-letter{
     font-size: 30px;
+    
 }
-#contacter {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
+
 .formulaire {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    gap: 10px;
+    
+}
+input[type="text"],
+input[type="email"],
+select[name="raison"]{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+label{
+    font-weight: bolder;
+}
+input[type="submit"],
+input[type="reset"]{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color: green;
+    color: aqua;
 }
 
-.footer {
-    background-color: rgb(43, 42, 42);
-    color : white;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 
