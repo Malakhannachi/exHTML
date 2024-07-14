@@ -109,9 +109,14 @@ input[type="reset"]:hover{
     padding: 10px 5px;
    
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
     header, .footer {
         width: 100%;
+        
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
         
     }
     
